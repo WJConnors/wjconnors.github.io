@@ -100,10 +100,28 @@
 				<li>Dynamically rendering up to 256 moving light sources</li>
 				<li>Showing both scenes with a split screen effect</li>
 			</ul>
-			</ul>
-		<ul>
-		</p>
+		</ul>
+	  </p>
 		<a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
+        View Github
+		</a>
+	</article>
+	
+	    <article class="game-project">
+		<h3>Game of Life C++</h3>
+		
+			<div class="media-container">
+			<img 
+				src="images/GameOfLife.png" 
+				alt="Screenshot of the OpenGL project" 
+				class="game-thumbnail"
+			/>
+		</div>
+		
+	  <p>
+		This is a university project which demonstrates use of advanced 
+	  </p>
+		<a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
         View Github
 		</a>
 	</article>
