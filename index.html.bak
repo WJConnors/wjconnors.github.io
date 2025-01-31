@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My GameDev Portfolio</title>
   <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- If your folder name is actually lowercase 'css', change 'CSS' to 'css' below. -->
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
   <!-- Header / Navigation -->
@@ -25,108 +26,131 @@
   <section id="games">
     <h2>My Games</h2>
 	
-	<article class="game-project">
-		<h3>Shot in the Dark</h3>
-    
-    <!-- Example Game Project -->
-  <!-- Wrap the image and video in a flex container -->
-		<div class="media-container">
-			<img 
-				src="images/SITDScreenshot.png" 
-				alt="Screenshot of Thumbnail of Shot in the Dark" 
-				class="game-thumbnail"
-			/>
+    <!-- Example Game Project: Shot in the Dark -->
+    <article class="game-project">
+      <h3>Shot in the Dark</h3>
+      <div class="media-container">
+        <img 
+          src="images/SITDScreenshot.png" 
+          alt="Screenshot of Thumbnail of Shot in the Dark" 
+          class="game-thumbnail"
+        />
 
-		<div class="video-container">
-			<video width="560" height="315" controls>
-				<source src="videos/ShotInTheDark.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		</div>
+        <!-- Replaced <video> with an embedded YouTube iframe -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vWuxJJ548q8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       
       <p>
         Shot in the Dark is a three person Unreal Engine project made in a week for the Newcastle University Game Development Society Winter Jam 2025. 
-		It is a short survival horror game where you explore a mine with a torch that has a limited battery. 
-		There is a monster hunting you as you explore and the goal of the game is to collect weapon parts to eventually defeat the monster while ensuring your torch battery does not run out.<br>
-		I made the following contributions to the project:
-		<ul>
-			<li>Creating the player character and their movement</li>
-			<li>Creating the torch and the battery pickups</li>
-			<li>Building and programming the UI</li>
-			<li>Implementing the game's framework surrounding the gameplay</li>
-			<li>Designing and implementing the game's objectives as well as the win and lose conditions</li>
-			<li>Adding the game's sound effects</li>
-		</ul>
+        It is a short survival horror game where you explore a mine with a torch that has a limited battery. 
+        There is a monster hunting you as you explore and the goal of the game is to collect weapon parts to eventually defeat the monster while ensuring your torch battery does not run out.<br>
+        I made the following contributions to the project:
+        <ul>
+          <li>Creating the player character and their movement</li>
+          <li>Creating the torch and the battery pickups</li>
+          <li>Building and programming the UI</li>
+          <li>Implementing the game's framework surrounding the gameplay</li>
+          <li>Designing and implementing the game's objectives as well as the win and lose conditions</li>
+          <li>Adding the game's sound effects</li>
+        </ul>
       </p>
       <a href="https://kieranknowles.itch.io/a-shot-in-the-dark" class="play-btn" target="_blank">
         Play Now
       </a>
-	   <a href="https://github.com/WJConnors/Team3ShotInTheDark" class="play-btn" target="_blank">
+      <a href="https://github.com/WJConnors/Team3ShotInTheDark" class="play-btn" target="_blank">
         View Github
       </a>
     </article>
     
+    <!-- Example Game Project: OpenGL Graphics Project -->
     <article class="game-project">
-		<h3>OpenGL Graphics Project</h3>
-		
-				<div class="media-container">
-			<img 
-				src="images/OpenGL.png" 
-				alt="Screenshot of the OpenGL project" 
-				class="game-thumbnail"
-			/>
+      <h3>OpenGL Graphics Project</h3>
+      <div class="media-container">
+        <img 
+          src="images/OpenGL.png" 
+          alt="Screenshot of the OpenGL project" 
+          class="game-thumbnail"
+        />
 
-		<div class="video-container">
-			<video width="560" height="315" controls>
-				<source src="videos/OpenGL.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		</div>
-		
-	  <p>
-		This project is a project built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
-		It contains multiple scenes which can be switched between that each demonstrate different effects.
-		These are some of the effects and technical details created for the project:
-		<ul>
-			<li>Generated landscaped with multiple blended textures</li>
-			<li>Standard lighting techniques making use of ambient, diffuse, and specular components</li>
-			<li>Skybox textures used in combination with environment mapping to show water reflections</li>
-			<li>Loading in and animating meshes with the appropriate textures</li>
-			<li>Deferred rendering and multiple advanced buffers have been implemented to allow for the following features
-			<ul>
-				<li>A post processing blur effect</li>
-				<li>Dynamically rendering up to 256 moving light sources</li>
-				<li>Showing both scenes with a split screen effect</li>
-			</ul>
-		</ul>
-	  </p>
-		<a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
+        <!-- Replaced <video> with an embedded YouTube iframe -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0Gr9--rOLmg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      
+      <p>
+        This project is built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
+        It contains multiple scenes which can be switched between that each demonstrate different effects.
+        These are some of the effects and technical details created for the project:
+        <ul>
+          <li>Generated landscapes with multiple blended textures</li>
+          <li>Standard lighting techniques using ambient, diffuse, and specular components</li>
+          <li>Skybox textures used in combination with environment mapping to show water reflections</li>
+          <li>Loading and animating meshes with the appropriate textures</li>
+          <li>Deferred rendering and advanced buffers to allow for:
+            <ul>
+              <li>A post-processing blur effect</li>
+              <li>Dynamically rendering up to 256 moving light sources</li>
+              <li>A split-screen effect to show both scenes simultaneously</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+      <a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
         View Github
-		</a>
-	</article>
+      </a>
+    </article>
 	
-	    <article class="game-project">
-		<h3>Game of Life C++</h3>
-		
-			<div class="media-container">
-			<img 
-				src="images/GameOfLife.png" 
-				alt="Screenshot of the OpenGL project" 
-				class="game-thumbnail"
-			/>
-		</div>
-		
-	  <p>
-		This is a university project which demonstrates use of advanced C++ features in order to create an optimised simulation for Conway's Game of Life. 
-		It is able to accurately run simulations on varying board sizes and search for specific patterns including space ships. 
-		This is a codebase which has been built from scratch using object-orientation and makes use of many C++ features including operator overloading, templates, threading, and interfaces.
-	  </p>
-		<a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
+    <!-- Example Game Project: Game of Life C++ -->
+    <article class="game-project">
+      <h3>Game of Life C++</h3>
+      <div class="media-container">
+        <img 
+          src="images/GameOfLife.png" 
+          alt="Screenshot of the Game of Life project" 
+          class="game-thumbnail"
+        />
+        <!-- If you do NOT have a video for this project, you can omit the video-container entirely -->
+        <!-- <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div> -->
+      </div>
+      
+      <p>
+        This university project demonstrates the use of advanced C++ features to create an optimized simulation for Conway's Game of Life. 
+        It can accurately run simulations on varying board sizes and search for specific patterns, including spaceships. 
+        This codebase has been built from scratch using object-orientation and utilizes many C++ features including operator overloading, templates, threading, and interfaces.
+      </p>
+      <a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
         View Github
-		</a>
-	</article>
+      </a>
+    </article>
     
   </section>
 

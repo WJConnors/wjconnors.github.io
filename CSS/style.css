@@ -38,6 +38,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* 80% of window width, centered with auto left-right margins */
 section {
   max-width: 80%; 
   margin: 2rem auto;
@@ -63,39 +64,52 @@ section h2 {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 1rem;
   border: 1px solid #ccc;
 }
 
-/* The container that wraps the image + video */
+/* Container that wraps the image + embedded video (iframe) */
 .media-container {
-  display: flex;                /* enable flex layout */
-  justify-content: center;      /* center items horizontally */
-  align-items: center;          /* center items vertically if heights differ */
-  gap: 1rem;                    /* space between items */
-  width: 100%;                  /* span full width of the parent */
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;                
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem; /* spacing under the container */
+}
+
+/* 
+   Let the image occupy half the container's width.
+   This might make the image and video side by side if there's enough space.
+*/
+.media-container img {
+  width: 50%;
+}
+
+/* 
+   16:9 aspect ratio for the video area:
+   - We give .video-container width: 50%; so it sits side by side with the image
+   - We use padding-bottom: 56.25% (which is 9/16 * 100) to enforce the 16:9 ratio
+   - Then set height: 0, position: relative, and absolutely position the iframe
+*/
+.video-container {
+  position: relative;
+  width: 50%;         /* side by side with the image */
+  padding-bottom: 56.25%; /* 16:9 ratio => 9/16 = 0.5625 => 56.25% */
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #ccc; /* optional, for a border around the video */
+  border-radius: 4px;     /* optional, for rounded corners */
   box-sizing: border-box;
 }
 
-/* Make both the image and the video container share the width */
-.media-container img,
-.media-container .video-container {
-  width: 50%;         /* each takes half of the container */
-  height: auto;       /* preserve aspect ratio */
-}
-
-/* Existing styles for video container */
-.video-container {
-  margin-bottom: 1rem;
-  overflow: hidden;
-  max-width: 100%; /* ensures it doesn't overflow its container */
-}
-
-/* Responsive video (iframe or HTML <video>) */
-.video-container iframe,
-.video-container video {
-  width: 100%;  /* let the container control the final width */
-  height: auto;
+/* Absolutely position the iframe to fill the .video-container */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: 0;
 }
 
@@ -119,7 +133,7 @@ footer {
   color: #555;
 }
 
-/* Make layout stack vertically on smaller screens */
+/* Responsive adjustments on smaller screens */
 @media (max-width: 768px) {
   section {
     margin: 1rem;
@@ -130,12 +144,19 @@ footer {
     margin-bottom: 1rem;
   }
 
+  /* Stack the image and video vertically */
   .media-container {
     flex-direction: column;
   }
 
+  /* Let them both occupy full width in mobile layout */
   .media-container img,
-  .media-container .video-container {
+  .video-container {
     width: 100%;
+  }
+
+  /* For a video container at full width, maintain 16:9 ratio */
+  .video-container {
+    padding-bottom: 56.25%;
   }
 }

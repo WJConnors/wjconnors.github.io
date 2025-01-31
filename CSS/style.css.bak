@@ -38,9 +38,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* If you want the section to take the full screen width, remove max-width below */
+/* 80% of window width, centered with auto left-right margins */
 section {
-  max-width: 80%; /* Remove or comment out if you want full width */
+  max-width: 80%; 
   margin: 2rem auto;
   padding: 1rem;
   background-color: #fff;
@@ -68,34 +68,33 @@ section h2 {
   border: 1px solid #ccc;
 }
 
-/* The container that wraps the image + video */
+/* The container that wraps the image + video (or iframe) */
 .media-container {
-  display: flex;                /* enable flex layout */
-  justify-content: center;      /* center items horizontally */
-  align-items: center;          /* center items vertically if heights differ */
-  gap: 1rem;                    /* space between items */
-  width: 100%;                  /* span full width of the parent */
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;                  
+  width: 100%;               
   box-sizing: border-box;
 }
 
-/* Make both the image and the video container share the width */
+/* Make both the image and the embedded video share the width */
 .media-container img,
 .media-container .video-container {
-  width: 50%;         /* each takes half of the container */
-  height: auto;       /* preserve aspect ratio */
+  width: 50%;   
+  height: auto; 
 }
 
-/* Existing styles for video container */
+/* The container for the video (iframe) */
 .video-container {
   margin-bottom: 1rem;
   overflow: hidden;
-  max-width: 100%; /* ensures it doesn't overflow its container */
+  max-width: 100%; 
 }
 
-/* Responsive video (iframe or HTML <video>) */
-.video-container iframe,
-.video-container video {
-  width: 100%;  /* let the container control the final width */
+/* Iframe styling: let the parent container decide the final width */
+.video-container iframe {
+  width: 100%;  
   height: auto;
   border: 0;
 }
