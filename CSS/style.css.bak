@@ -1,0 +1,142 @@
+/* style.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* If you want the section to take the full screen width, remove max-width below */
+section {
+  max-width: 80%; /* Remove or comment out if you want full width */
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.game-project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+/* Keep the image responsive by default */
+.game-thumbnail {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* The container that wraps the image + video */
+.media-container {
+  display: flex;                /* enable flex layout */
+  justify-content: center;      /* center items horizontally */
+  align-items: center;          /* center items vertically if heights differ */
+  gap: 1rem;                    /* space between items */
+  width: 100%;                  /* span full width of the parent */
+  box-sizing: border-box;
+}
+
+/* Make both the image and the video container share the width */
+.media-container img,
+.media-container .video-container {
+  width: 50%;         /* each takes half of the container */
+  height: auto;       /* preserve aspect ratio */
+}
+
+/* Existing styles for video container */
+.video-container {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  max-width: 100%; /* ensures it doesn't overflow its container */
+}
+
+/* Responsive video (iframe or HTML <video>) */
+.video-container iframe,
+.video-container video {
+  width: 100%;  /* let the container control the final width */
+  height: auto;
+  border: 0;
+}
+
+.play-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.play-btn:hover {
+  background-color: #1e88e5;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #555;
+}
+
+/* Make layout stack vertically on smaller screens */
+@media (max-width: 768px) {
+  section {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .game-project {
+    margin-bottom: 1rem;
+  }
+
+  .media-container {
+    flex-direction: column;
+  }
+
+  .media-container img,
+  .media-container .video-container {
+    width: 100%;
+  }
+}

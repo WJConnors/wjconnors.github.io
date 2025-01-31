@@ -10,71 +10,104 @@
 <body>
   <!-- Header / Navigation -->
   <header>
-    <h1>My GameDev Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>William Connors Portfolio</h1>
   </header>
   
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hello! I'm Billy Connors, a Computer Game Engineering MSc student. 
+      Hello! I'm Billy Connors, a Computer Game Engineering MSc student.
     </p>
   </section>
   
   <!-- Games Section -->
   <section id="games">
     <h2>My Games</h2>
+	
+	<article class="game-project">
+		<h3>Shot in the Dark</h3>
     
     <!-- Example Game Project -->
-    <article class="game-project">
-      <h3>Game Title #1</h3>
-      <img 
-        src="images/placeholder-game-thumbnail.jpg" 
-        alt="Screenshot or Thumbnail of Game #1" 
-        class="game-thumbnail"
-      />
-      
-      <!-- Option .1: Host your own video locally (replace with real path) -->
-      
-      <div class="video-container">
-        <video width="560" height="315" controls>
-          <source src="videos/sample-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+  <!-- Wrap the image and video in a flex container -->
+		<div class="media-container">
+			<img 
+				src="images/SITDScreenshot.png" 
+				alt="Screenshot of Thumbnail of Shot in the Dark" 
+				class="game-thumbnail"
+			/>
+
+		<div class="video-container">
+			<video width="560" height="315" controls>
+				<source src="videos/ShotInTheDark.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		</div>
       
       <p>
-        Short description of the game, the tools used (e.g., Unity, Unreal, Godot), 
-        and any achievements or interesting mechanics.
+        Shot in the Dark is a three person Unreal Engine project made in a week for the Newcastle University Game Development Society Winter Jam 2025. 
+		It is a short survival horror game where you explore a mine with a torch that has a limited battery. 
+		There is a monster hunting you as you explore and the goal of the game is to collect weapon parts to eventually defeat the monster while ensuring your torch battery does not run out.<br>
+		I made the following contributions to the project:
+		<ul>
+			<li>Creating the player character and their movement</li>
+			<li>Creating the torch and the battery pickups</li>
+			<li>Building and programming the UI</li>
+			<li>Implementing the game's framework surrounding the gameplay</li>
+			<li>Designing and implementing the game's objectives as well as the win and lose conditions</li>
+			<li>Adding the game's sound effects</li>
+		</ul>
       </p>
-      <a href="https://example.com/play-game-1" class="play-btn" target="_blank">
+      <a href="https://kieranknowles.itch.io/a-shot-in-the-dark" class="play-btn" target="_blank">
         Play Now
+      </a>
+	   <a href="https://github.com/WJConnors/Team3ShotInTheDark" class="play-btn" target="_blank">
+        View Github
       </a>
     </article>
     
-    <!-- Add more <article> blocks for additional games/projects -->
+    <article class="game-project">
+		<h3>OpenGL Graphics Project</h3>
+		
+				<div class="media-container">
+			<img 
+				src="images/OpenGL.png" 
+				alt="Screenshot of the OpenGL project" 
+				class="game-thumbnail"
+			/>
+
+		<div class="video-container">
+			<video width="560" height="315" controls>
+				<source src="videos/OpenGL.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		</div>
+		
+	  <p>
+		This project is a project built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
+		It contains multiple scenes which can be switched between that each demonstrate different effects.
+		These are some of the effects and technical details created for the project:
+		<ul>
+			<li>Generated landscaped with multiple blended textures</li>
+			<li>Standard lighting techniques making use of ambient, diffuse, and specular components</li>
+			<li>Skybox textures used in combination with environment mapping to show water reflections</li>
+			<li>Loading in and animating meshes with the appropriate textures</li>
+			<li>Deferred rendering and multiple advanced buffers have been implemented to allow for the following features
+			<ul>
+				<li>A post processing blur effect</li>
+				<li>Dynamically rendering up to 256 moving light sources</li>
+				<li>Showing both scenes with a split screen effect</li>
+			</ul>
+		</ul>
+	  </p>
+		<a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
+        View Github
+		</a>
+	</article>
     
   </section>
-  
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Interested in collaborating or have questions? 
-      Feel free to <a href="mailto:your.email@example.com">email me</a>!
-    </p>
-  </section>
-  
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+
 </body>
 </html>
