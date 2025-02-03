@@ -38,9 +38,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* 80% of window width, centered with auto left-right margins */
+/* 80% of window width, centered */
 section {
-  max-width: 80%; 
+  max-width: 80%;
   margin: 2rem auto;
   padding: 1rem;
   background-color: #fff;
@@ -57,53 +57,23 @@ section h2 {
   margin-bottom: 1.5rem;
   border-radius: 6px;
   background: #fafafa;
+  text-align: center;
 }
 
-/* Keep the image responsive by default */
-.game-thumbnail {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #ccc;
-}
-
-/* Container that wraps the image + embedded video (iframe) */
-.media-container {
-  display: flex;        
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;                
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 1rem; /* spacing under the container */
-}
-
-/* 
-   Let the image occupy half the container's width.
-   This might make the image and video side by side if there's enough space.
-*/
-.media-container img {
-  width: 50%;
-}
-
-/* 
-   16:9 aspect ratio for the video area:
-   - We give .video-container width: 50%; so it sits side by side with the image
-   - We use padding-bottom: 56.25% (which is 9/16 * 100) to enforce the 16:9 ratio
-   - Then set height: 0, position: relative, and absolutely position the iframe
-*/
+/* Reduce video size to 75% */
 .video-container {
   position: relative;
-  width: 50%;         /* side by side with the image */
-  padding-bottom: 56.25%; /* 16:9 ratio => 9/16 = 0.5625 => 56.25% */
+  width: 75%;
+  padding-bottom: 42.1875%;
+  margin: 0 auto;
   height: 0;
   overflow: hidden;
-  border: 1px solid #ccc; /* optional, for a border around the video */
-  border-radius: 4px;     /* optional, for rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
-/* Absolutely position the iframe to fill the .video-container */
+/* Ensure iframe takes up full space within .video-container */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -111,6 +81,23 @@ section h2 {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Keep image responsive */
+.game-thumbnail {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Center images inside an article */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .play-btn {
@@ -131,32 +118,4 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #555;
-}
-
-/* Responsive adjustments on smaller screens */
-@media (max-width: 768px) {
-  section {
-    margin: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .game-project {
-    margin-bottom: 1rem;
-  }
-
-  /* Stack the image and video vertically */
-  .media-container {
-    flex-direction: column;
-  }
-
-  /* Let them both occupy full width in mobile layout */
-  .media-container img,
-  .video-container {
-    width: 100%;
-  }
-
-  /* For a video container at full width, maintain 16:9 ratio */
-  .video-container {
-    padding-bottom: 56.25%;
-  }
 }

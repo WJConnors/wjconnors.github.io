@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My GameDev Portfolio</title>
+  <title>William Connors GameDev Portfolio</title>
   <!-- Link to your CSS file -->
-  <!-- Important: If your folder is named lowercase 'css', use 'css/style.css' instead of 'CSS/style.css'. -->
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
@@ -19,35 +18,27 @@
     <h2>About Me</h2>
     <p>
       Hello! I'm Billy Connors, a Computer Game Engineering MSc student passionate about learning how to improve my technical skills and making a contribution to the creative medium that I love.<br>
-	  To see my work or contact me, please see below.<br>
-	  <a href="https://github.com/WJConnors">GitHub: WJConnors</a><br>
-	  <a href="mailto:billy.connors@yahoo.co.uk">Email: billy.connors@yahoo.co.uk</a>
+      To see my work or contact me, please see below.<br>
+      <a href="https://github.com/WJConnors">GitHub: WJConnors</a><br>
+      <a href="mailto:billy.connors@yahoo.co.uk">Email: billy.connors@yahoo.co.uk</a>
     </p>
   </section>
   
   <!-- Games Section -->
   <section id="games">
     <h2>My Games</h2>
-	
+  
     <!-- Shot in the Dark -->
     <article class="game-project">
       <h3>Shot in the Dark</h3>
-      <div class="media-container">
-        <img 
-          src="images/SITDScreenshot.png" 
-          alt="Screenshot of Thumbnail of Shot in the Dark" 
-          class="game-thumbnail"
-        />
-        <!-- 16:9 YouTube iframe, no width/height attributes -->
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/vWuxJJ548q8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/vWuxJJ548q8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
       
       <p>
@@ -71,26 +62,18 @@
         View Github
       </a>
     </article>
-    
+  
     <!-- OpenGL Graphics Project -->
     <article class="game-project">
       <h3>OpenGL Graphics Project</h3>
-      <div class="media-container">
-        <img 
-          src="images/OpenGL.png" 
-          alt="Screenshot of the OpenGL project" 
-          class="game-thumbnail"
-        />
-        <!-- 16:9 YouTube iframe, no width/height attributes -->
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/0Gr9--rOLmg"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/0Gr9--rOLmg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
       
       <p>
@@ -115,8 +98,8 @@
         View Github
       </a>
     </article>
-	
-    <!-- Game of Life C++ -->
+
+    <!-- Game of Life C++ (Restored Exactly as It Was) -->
     <article class="game-project">
       <h3>Game of Life C++</h3>
       <div class="media-container">
@@ -125,7 +108,6 @@
           alt="Screenshot of the Game of Life project" 
           class="game-thumbnail"
         />
-        <!-- If you had a video, you could embed it similarly. Omit if none. -->
       </div>
       
       <p>
@@ -137,7 +119,7 @@
         View Github
       </a>
     </article>
-    
+
   </section>
 
 </body>

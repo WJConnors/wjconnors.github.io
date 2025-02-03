@@ -38,9 +38,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* 80% of window width, centered with auto left-right margins */
+/* 80% of window width, centered */
 section {
-  max-width: 80%; 
+  max-width: 80%;
   margin: 2rem auto;
   padding: 1rem;
   background-color: #fff;
@@ -57,46 +57,39 @@ section h2 {
   margin-bottom: 1.5rem;
   border-radius: 6px;
   background: #fafafa;
+  text-align: center;
 }
 
-/* Keep the image responsive by default */
+/* Reduce video size to 75% */
+.video-container {
+  position: relative;
+  width: 75%;
+  padding-bottom: 42.1875%;
+  margin: 0 auto;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Ensure iframe takes up full space within .video-container */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Keep image responsive */
 .game-thumbnail {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 1rem;
   border: 1px solid #ccc;
-}
-
-/* The container that wraps the image + video (or iframe) */
-.media-container {
-  display: flex;        
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;                  
-  width: 100%;               
-  box-sizing: border-box;
-}
-
-/* Make both the image and the embedded video share the width */
-.media-container img,
-.media-container .video-container {
-  width: 50%;   
-  height: auto; 
-}
-
-/* The container for the video (iframe) */
-.video-container {
   margin-bottom: 1rem;
-  overflow: hidden;
-  max-width: 100%; 
-}
-
-/* Iframe styling: let the parent container decide the final width */
-.video-container iframe {
-  width: 100%;  
-  height: auto;
-  border: 0;
 }
 
 .play-btn {
@@ -117,25 +110,4 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #555;
-}
-
-/* Make layout stack vertically on smaller screens */
-@media (max-width: 768px) {
-  section {
-    margin: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .game-project {
-    margin-bottom: 1rem;
-  }
-
-  .media-container {
-    flex-direction: column;
-  }
-
-  .media-container img,
-  .media-container .video-container {
-    width: 100%;
-  }
 }
