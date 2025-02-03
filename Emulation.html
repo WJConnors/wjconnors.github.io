@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulation - William Connors Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>William Connors Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="emulation.html">Emulation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="emulation">
+        <h2>Emulation</h2>
+		
+		<p>
+			I've always been interested in low-level programming and CPU architecture so I've begun a project focused on emulation to further my knowledge in these topics. 
+			The primary goal of the project is to make three emulators. 
+			I've chosen the Intel 8080 CPU, the Zilog Z80 CPU (used for the ZX Spectrum), and the Game Boy as these are individual projects which start fairly simple yet can build upon each other. 
+			For each emulator, I intend to make at least one small game written in the hardware's assembly language. 
+			The goal of the project is to spend more time writing and reading low-level code, particularly in C and various assembly languages. 
+			I'm not only doing this because I'm interested in these topics, I believe that a better understanding of exactly what's going on when code is being run makes for a much improved programmer in any language. 
+			I will update this page as each step of the project is completed.
+		</p>
+        
+        <article class="emulation-project">
+            <h3>Intel 8080 Emulation</h3>
+			
+			  <a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
+				View Github
+			  </a>
+			
+            <p>
+                The first step of this project is creating an Intel 8080 emulator which will be able to run games like Space Invaders and Gun Fight.
+            </p>
+			
+			<h4>Disassembler</h4>
+			  <div class="image-container">
+				<img 
+				  src="images/Disassembler.png" 
+				  alt="Screenshot of the Intel 8080 Disassembler" 
+				  class="game-thumbnail"
+				  style="width: 50%; height: auto;"
+				/>
+			  </div>
+			  <p>
+				To begin the Intel 8080 project, I have made a disassembler for ROM files. 
+				This is useful as it not only allows me read the source code from each ROM but also provides an opportunity to read through all of the assembly commands which helps undestand the CPU architecture. 
+				This understanding will be vital in the next part of the project, creating the emulator.
+			  </p>
+        </article>
+
+    </section>
+</body>
+</html>
