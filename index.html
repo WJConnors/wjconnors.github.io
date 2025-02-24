@@ -14,6 +14,8 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+			<li><a href="msc.html">Computer Game Engineering MSc</a></li>
+			<li><a href="game-jams.html">Game Jams</a></li>
             <li><a href="Emulation.html">Emulation</a></li>
         </ul>
     </nav>
@@ -31,146 +33,9 @@
     </p>
   </section>
   
-  <!-- Games Section -->
-  <section id="games">
-    <h2>My Projects</h2>
-  
-    <!-- Shot in the Dark -->
-    <article class="game-project">
-      <h3>Shot in the Dark</h3>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/vWuxJJ548q8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      
-      <p>
-        Shot in the Dark is a three-person Unreal Engine project made in a week for the Newcastle University Game Development Society Winter Jam 2025. 
-        It is a short survival horror game where you explore a mine with a torch that has a limited battery. 
-        There is a monster hunting you as you explore and the goal of the game is to collect weapon parts to eventually defeat the monster while ensuring your torch battery does not run out.<br>
-        I made the following contributions to the project:
-        <ul>
-          <li>Creating the player character and their movement</li>
-          <li>Creating the torch and the battery pickups</li>
-          <li>Building and programming the UI</li>
-          <li>Implementing the game's framework surrounding the gameplay</li>
-          <li>Designing and implementing the game's objectives as well as the win and lose conditions</li>
-          <li>Adding the game's sound effects</li>
-        </ul>
-      </p>
-      <a href="https://kieranknowles.itch.io/a-shot-in-the-dark" class="play-btn" target="_blank">
-        Play Now
-      </a>
-      <a href="https://github.com/WJConnors/Team3ShotInTheDark" class="play-btn" target="_blank">
-        View Github
-      </a>
-    </article>
-	
-	<article class="game-project">
-	  <h3>Last Breath</h3>
-
-	  <div class="game-container">
+  	  <div class="game-container">
 		<iframe src="lastbreath_html/index.html" width="750" height="680" style="border: none;"></iframe>
 	  </div>
-
-	  <p>
-		  Last Breath is a small arcade game where you must survive for as long as you can while trapped in a gravity well surrounded by asteroids. 
-		  It was built in about ten hours worth of work for the Brackeys Game Jam 2025.1 and can be played using the above embed.
-		  The goal of the project was to learn how to use Pico-8, a fantasy console which also acts as an all in one development software for itself. 
-		  The console uses a modified version of Lua and is built with many restrictions in mind such as an 8192 token limit, 
-		  extremely limited sprite and map sheets which share space, a set window size of 128x128, and a set colour pallet of 16 colours.<br>
-		  Using such a restrictive development environment was an interesting experiment that forced me to change the way I thought about developing the project. 
-		  When given limited tools, I had to focus carefully upon how I structured my code to keep the codebase usable. 
-		  Now I have built one project in Pico-8, I'm extremely interested in building a more complicated game in it which will force me to think carefully 
-		  about how best to manage the limited resources.
-		
-
-		<h4>Controls</h4>
-		<ul>
-		  <li>Left and right arrow keys move the ship forward and in their respective directions.</li>
-		  <li><em>Be aware that your ship carries a lot of momentum from small actions.</em></li>
-		  <li>Z and X fire your left and right lasers.</li>
-		</ul>
-
-		<h4>Gameplay</h4>
-		<ul>
-		  <li>Survive as long as you can without getting hit by asteroids and score as many points as possible.</li>
-		  <li>You earn <strong>1 point</strong> for avoiding an asteroid or <strong>5 points</strong> for shooting one.</li>
-		  <li>The border of the gravity well shoots you back into the middle—this can either save your ship or end it depending on how well you use it.</li>
-		  <li>Navigate the menu with the <strong>up and down arrow keys</strong> and select with <strong>Z</strong>.</li>
-		</ul>
-	  </p>
-	  <a href="https://tahuru.itch.io/last-breath" class="play-btn" target="_blank">
-		View on itch.io
-	  </a>
-	  <a href="https://github.com/WJConnors/NothingCouldPossiblyGoWrong" class="play-btn" target="_blank">
-		View Github
-	  </a>
-	</article>
-  
-    <!-- OpenGL Graphics Project -->
-    <article class="game-project">
-      <h3>OpenGL Graphics Project</h3>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/0Gr9--rOLmg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      
-      <p>
-        This project is built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
-        It contains multiple scenes which can be switched between that each demonstrate different effects.
-        These are some of the effects and technical details created for the project:
-        <ul>
-          <li>Generated landscapes with multiple blended textures</li>
-          <li>Standard lighting techniques using ambient, diffuse, and specular components</li>
-          <li>Skybox textures used in combination with environment mapping to show water reflections</li>
-          <li>Loading and animating meshes with the appropriate textures</li>
-          <li>Deferred rendering and advanced buffers to allow for:
-            <ul>
-              <li>A post-processing blur effect</li>
-              <li>Dynamically rendering up to 256 moving light sources</li>
-              <li>A split-screen effect to show both scenes simultaneously</li>
-            </ul>
-          </li>
-        </ul>
-      </p>
-      <a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
-        View Github
-      </a>
-    </article>
-
-<article class="game-project">
-  <h3>Game of Life C++</h3>
-  
-  <!-- Center the image within the article -->
-  <div class="image-container">
-    <img 
-      src="images/GameOfLife.png" 
-      alt="Screenshot of the Game of Life project" 
-      class="game-thumbnail"
-    />
-  </div>
-
-  <p>
-    This university project demonstrates the use of advanced C++ features to create an optimized simulation for Conway's Game of Life. 
-    It can accurately run simulations on varying board sizes and search for specific patterns, including spaceships. 
-    This codebase has been built from scratch using object-orientation and utilizes many C++ features including operator overloading, templates, threading, and interfaces.
-  </p>
-  <a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
-    View Github
-  </a>
-</article>
-
-  </section>
 
 </body>
 </html>

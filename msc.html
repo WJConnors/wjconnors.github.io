@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>William Connors GameDev Portfolio</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+<header>
+    <h1>William Connors Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="msc.html">Computer Game Engineering MSc</a></li>
+			<li><a href="game-jams.html">Game Jams</a></li>
+            <li><a href="Emulation.html">Emulation</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="Computer Game Engineering MSc">
+    <h2>Computer Game Engineering MSc</h2>
+  
+    <!-- OpenGL Graphics Project -->
+    <article class="game-project">
+      <h3>OpenGL Graphics Project</h3>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/0Gr9--rOLmg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      
+      <p>
+        This project is built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
+        It contains multiple scenes which can be switched between that each demonstrate different effects.
+        These are some of the effects and technical details created for the project:
+        <ul>
+          <li>Generated landscapes with multiple blended textures</li>
+          <li>Standard lighting techniques using ambient, diffuse, and specular components</li>
+          <li>Skybox textures used in combination with environment mapping to show water reflections</li>
+          <li>Loading and animating meshes with the appropriate textures</li>
+          <li>Deferred rendering and advanced buffers to allow for:
+            <ul>
+              <li>A post-processing blur effect</li>
+              <li>Dynamically rendering up to 256 moving light sources</li>
+              <li>A split-screen effect to show both scenes simultaneously</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+      <a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
+        View Github
+      </a>
+    </article>
+
+<article class="game-project">
+  <h3>Game of Life C++</h3>
+  
+  <!-- Center the image within the article -->
+  <div class="image-container">
+    <img 
+      src="images/GameOfLife.png" 
+      alt="Screenshot of the Game of Life project" 
+      class="game-thumbnail"
+    />
+  </div>
+
+  <p>
+    This university project demonstrates the use of advanced C++ features to create an optimized simulation for Conway's Game of Life. 
+    It can accurately run simulations on varying board sizes and search for specific patterns, including spaceships. 
+    This codebase has been built from scratch using object-orientation and utilizes many C++ features including operator overloading, templates, threading, and interfaces.
+  </p>
+  <a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
+    View Github
+  </a>
+</article>
+
+  </section>
