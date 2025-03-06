@@ -161,6 +161,25 @@ section h2 {
   background-color: #1976d2;
 }
 
+/* Arcade Survival Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;  /* Center images horizontally */
+    align-items: center;      /* Align images vertically */
+    flex-wrap: wrap;          /* Allow wrapping if screen is too small */
+    gap: 10px;                /* Space between images */
+    width: 90%;               /* Ensure it takes up 95% of the article */
+    margin: 0 auto;           /* Center inside article */
+}
+
+.gallery-image {
+    flex: 1;                  /* Allows images to scale evenly */
+    max-width: 45%;           /* Ensure four images fit within the 95% width */
+    height: auto;
+    border-radius: 6px;       /* Optional: Rounded corners */
+    object-fit: cover;        /* Ensures consistent scaling */
+}
+
 /* Footer Styling */
 footer {
   text-align: center;
