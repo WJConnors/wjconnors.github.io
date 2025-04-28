@@ -23,6 +23,47 @@
 
 <section id="Computer Game Engineering MSc">
     <h2>Computer Game Engineering MSc</h2>
+	
+	    <!-- OpenGL Graphics Project -->
+    <article class="game-project">
+      <h3>BlitzBox</h3>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/xMGoUh14qWc?si=TZmpf-Y5iZOwgR3E"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      
+      <p>
+        BlitzBox is a cross-platform and cross-play multiplayer arena shooter built with a team of 8 people. 
+		The game is built around a gravity mechanic allowing for each player to rotate the direction of their own gravity at any moment changing their position in the cube level.		
+		In this project I was the head of AI and single player and these are my contributions:
+        <ul>
+          <li>Generating and exporting navmesh data from Unity for all sides of the cube</li>
+		  <li>Importing navmeshes into the project and modifying them to work with our framework</li>
+		  <li>Creating a pathfinding algorithm that works on all sides of the cube level</li>
+		  <li>Creating the games AI and handling their behaviour through state machines to allow for:</li>
+		  <ul>
+			<li>The AI to switch between default behaviour and attacking behaviour when the player is nearby</li>
+			<li>The AI to react to and pathfind to the player</li>
+			<li>The AI to attack the player when appropriate</li>
+			<li>The AI to handle different states and make decisions when appropriate considering states such as the reload timer</li>
+		  </ul>
+		  <li>Designed and created the single player game mode including the following:</li>
+		  <ul>
+			<li>A wave based system where the player must defeat a certain number of AI to continue</li>
+			<li>The AI progressively gets harder as the game continues by getting more aggressive and more dangerous</li>
+			<li>Creating a scoring system and handling game ending to be functional with the game's wider menu loop</li>
+		  </ul>
+        </ul>
+      </p>
+      <a href="https://github.com/kieranknowles1/csc8508-team-project" class="play-btn" target="_blank">
+        View Github
+      </a>
+    </article>
   
     <!-- OpenGL Graphics Project -->
     <article class="game-project">
