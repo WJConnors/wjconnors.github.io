@@ -136,13 +136,29 @@ section h2 {
 }
 
 /* Center the game embed */
+.game-wrapper {
+  display: flex;
+  justify-content: center;  /* Center the content horizontally */
+  align-items: center;      /* Align items vertically */
+  gap: 20px;                /* Space between the game and instructions */
+  margin: 20px auto;        /* Center the wrapper itself */
+}
+
+/* Game Instructions */
+.game-instructions {
+  max-width: 300px;         /* Limit the width of the instructions */
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Adjust game-container if needed */
 .game-container {
   display: flex;
-  justify-content: center;  /* Center horizontally */
-  align-items: center;      /* Center vertically */
-  margin: 20px auto;
-  width: 750px;  /* Set a fixed width */
-  height: 680px; /* Set a fixed height */
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+  height: 680px;
+  margin: 0 auto;  
 }
 
 /* Button Styling */

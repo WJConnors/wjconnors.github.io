@@ -1,4 +1,4 @@
-	<!-- Home Page -->
+<!-- Home Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
             <li><a href="index.html">Home</a></li>
 			<li><a href="msc.html">Computer Game Engineering MSc</a></li>
 			<li><a href="game-jams.html">Game Jams</a></li>
-            <li><a href="Emulation.html">Emulation</a></li>
+            <li><a href="Emulation.html">Other</a></li>
         </ul>
     </nav>
 </header>
@@ -29,7 +29,11 @@
   <div class="about-content">
     <img src="images/Billy.jpg" alt="Billy Connors" class="about-image">
     <p>
-      Hello! I'm Billy Connors, a Computer Game Engineering MSc student passionate about learning how to improve my technical skills and making a contribution to the creative medium that I love.<br>
+      Hello! I'm Billy Connors, a former teacher and now a Computer Game Engineering MSc student passionate about learning how to improve my technical skills and making a contribution to the creative medium that I love.<br>
+	  As a programmer, I primarily use C++ but I have experience building projects in C#, Lua, Java, Python, and Haskell. 
+	  I'm experienced in building projects with the largest game engines, particularly Unreal and Unity, but also enjoy learning to use smaller engines and frameworks such as Godot, Pico-8, and raylib.<br>
+	  In addition to working on my technical skills, I take every project as an opportunity to work on my design skills. Game design has fascinated me all my life and I find the creative 
+	  experience of creating a game to be particularly fulfilling.
       To see my work or contact me, please see below.<br>
       <a href="https://github.com/WJConnors">GitHub: WJConnors</a><br>
       <a href="mailto:billy.connors@yahoo.co.uk">Email: billy.connors@yahoo.co.uk</a>
@@ -38,9 +42,16 @@
 </section>
 
   
-  	<div class="game-container">
-		<iframe src="lastbreath_html/index.html" width="750" height="680" style="border: none;"></iframe>
-	</div>
+  	<div class="game-wrapper">
+      <div class="game-instructions">
+        <h3>How to Play</h3>
+        <p>Use the left and right arrow keys to move. When you hold down a direction, the thrusters will move you forward and to the side. Press Z and X to fire. 
+		Survive for as long as you can. The border will bounce you away, use this movement to your advantage.</p>
+      </div>
+      <div class="game-container">
+        <iframe src="lastbreath_html/index.html" width="750" height="680" style="border: none;"></iframe>
+      </div>
+    </div>
 
 </body>
 
