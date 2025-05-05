@@ -14,6 +14,61 @@
             <a href="index.html">Billy Connors Portfolio</a>
         </h1>
     </header>
+
+    <section id="gameoflife">
+        <h2>Conway's Game of Life</h2>
+        <a href="https://github.com/WJConnors/CSC8501_Coursework" class="play-btn" target="_blank">
+            View Github
+        </a>
+
+        <p>
+            The purpose of this project was to create a highly optimised solution for a combinatorial problem, specifically Conway's Game of Life. 
+            The goal was not just to be able to simulate the game, but to be able to run experiments to find optimal starting board positions that 
+            would lead to different patterns ranging from still lifes to spaceships. This required writing highly efficient code that was capable of running 
+            experiments while checking for patterns very quickly.
+        </p>
+
+        <div class="image-container">
+            <img 
+              src="images/GoLgif.gif" 
+              alt="Screenshot of the Game of Life project" 
+              class="game-thumbnail"
+            />
+          </div>
+
+    </section>
+
+    <section id="projectdetails">
+        <h2>Project Details</h2>
+
+        <p>
+            The most important aspect of ensuring this code ran quickly was allowing it to be multithreaded. I approached this by having each thread individually 
+            run their own simulations until the end condition for the experiment has been met. This involved using mutexes to carefully lock and unlock any 
+            shared memory being used by the threads.
+        </p>
+
+        <div class="image-container">
+            <img 
+              src="images/golthreadstart.png" 
+              alt="Screenshot of the Game of Life code" 
+              class="game-thumbnail"
+            />
+        </div>
+
+          <p>
+            After each step of a simulation was run, it would check for any of the patterns that were being looked for. 
+            The patterns were stored in their own namespace and were passed into a generic function that was used to check for each one. 
+            In the case of a pattern with multiple steps, the board would store the location of the pattern on the previous step to more efficiently search for 
+            the next step in the pattern.
+          </p>
+
+        <div class="image-gallery">
+            <img src="images/golpattern.png" alt="Game of Life Screenshot 1" class="gallery-image">
+            <img src="images/golss.png" alt="Game of Life Screenshot 2" class="gallery-image">
+        </div>
+
+    </section>
+
 </body>
 
 <footer>
