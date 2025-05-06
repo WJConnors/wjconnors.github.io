@@ -14,6 +14,73 @@
             <a href="index.html">Billy Connors Portfolio</a>
         </h1>
     </header>
+
+    <section id="opengl">
+        <h2>OpenGL Graphics Project</h2>
+        <a href="https://github.com/WJConnors/CSC8502" class="play-btn" target="_blank">
+            View Github
+        </a>
+
+        <p>
+            This project is built to demonstrate advanced graphics techniques created with OpenGL and shaders. 
+            It contains multiple scenes which can be switched between that each demonstrate different effects. 
+        </p>
+
+        <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/0Gr9--rOLmg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+        </div>
+
+        <p>
+            Creating this scene involved rendering with a series of frame buffers to draw the scene any any effects. 
+            An example of shader code and part of the render pipeline is below.
+        </p>
+
+        <div class="image-gallery">
+            <img src="images/oglcode1.png" alt="OpenGL Code Screenshot 1" class="gallery-image">
+            <img src="images/oglcode2.png" alt="OpenGL Code Screenshot 2" class="gallery-image">
+        </div>
+
+        <p>
+            This scene uses deferred rendering to create 256 lights where the position and colour are randomly generate which light up the 
+            landscape and the 1024 spheres acting as snow. 
+        </p>
+
+        <div class="image-container">
+            <img 
+              src="images/OpenGL.png" 
+              alt="Screenshot of OpenGL lights" 
+              class="game-thumbnail"
+            />
+        </div>
+
+        <p>
+            The scene contains water which has implementations of partial transparency and reflections.
+        </p>
+
+        <div class="image-container">
+            <img 
+              src="images/openglwater.png" 
+              alt="Screenshot of OpenGL water" 
+              class="game-thumbnail"
+            />
+        </div>
+
+        <p>
+            The scene used shaders to create a transition effect when the main scene flythrough is switching between scenes to mask the transition.
+        </p>
+
+        <div class="image-gallery">
+            <img src="images/openglcodetrans.png" alt="OpenGL Code Screenshot 1" class="gallery-image">
+            <img src="images/opengltransition.png" alt="OpenGL Code Screenshot 2" class="gallery-image">
+        </div>
+
+    </section>
 </body>
 
 <footer>
