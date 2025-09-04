@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billy Connors Portfolio</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <h1>
+            <a href="index.html">Billy Connors Portfolio</a>
+        </h1>
+    </header>
+
+    <section id="blitzbox">
+        <h2>Vindolanda</h2>
+        <a href="https://github.com/WJConnors/Vindolanda" class="play-btn" target="_blank">
+            View Github
+        </a>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/IrYge_D-jKs?si=8zz5dIBwkg9w1dfF"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            </div>
+        <p>
+            Vindolanda is a historical strategy game built in Unreal Engine using C++ primarily with Blueprints when appropriate.<br>
+			In this game you must build up your defences by building archer towers, training controllable
+			warriors, and placing bricks with a custom grid based building system.
+        </p>
+
+        <div class="image-gallery">
+            <img src="images/vMenu.png" alt="Vindolanda Screenshot 1" class="gallery-image">
+            <img src="images/vKnights.png" alt="Vindolanda Screenshot 2" class="gallery-image">
+            <img src="images/VBuild.png" alt="Vindolanda Screenshot 3" class="gallery-image">
+            <img src="images/VNight.png" alt="Vindolanda Screenshot 4" class="gallery-image">
+        </div>
+
+    </section>
+
+    <section id="Details">
+        <h2>Project Details</h2>
+
+        <h3>Top-Down Utilities Plugin</h3>
+		
+		<p>
+			I begun this project by creating a reusable plugin for top0-down games. As someone with a great interest in strategy games, 
+			I intend to make more of them in the future so making a plugin containing many basic RTS elements was a very obvious choice. 
+			It contains all the basic controls needed inclduing camera movement, unit and building selection, unit movement,
+			base classes for units and buildings, and a modifiable resource table. This plugin is designed to be very easy to drop 
+			into other projects by being generic but still expandable for other use cases. Any building or unit can inherit the base classes 
+			and be easily expanded with any needed functionality.
+		</p>
+
+		 <div class="image-gallery">
+			<img src="images/vPlugin.png" alt="Screenshot of the plugin classes" class="gallery-image">
+			<img src="images/vPathfinding.png" alt="Screenshot of the pathfinding overlay" class="gallery-image">
+		 </div>
+		 
+		 <h3>Game Features</h3>
+		 
+		 <p>
+			This game includes three main features for defending your base:
+			<ul>
+				<li>Building archer towers which shoot at nearby enemies. These can only be built in the inner portion of the base and will 
+				change colour tho show valid building locations</li>
+				<li>Training warriors which will taunt and fight approaching enemies. These can be controlled like a normal RTS unit by 
+				selecting them with a click or a box-select and then right-clicking to move.</li>
+				<li>Placing bricks to modify the paths the enemies can take. The bricks are stored using Unreal Engine's hierarchical 
+				instanced static mesh system along with additional maps for grid cooardinates to ensure they do not affect performance.</li>
+			<ul>
+		 </p>
+		 
+		 <div class="image-gallery">
+			<img src="images/vInvalid.png" alt="Screenshot of an invalid build" class="gallery-image">
+			<img src="images/vBarracks.png" alt="Screenshot of the barracks" class="gallery-image">
+		 </div>
+		 
+		 <h3>Main Game Loop</h3>
+		 
+		 <p>
+			The main game loop involves building your defences during the day and then defending your base from enemies at night. 
+			Each night, enemies get stronger and more numerous. Defeating them gives you more gold to build more defences. 
+			The goal of the enemies is to get to the gold in the middle of your base, steal it, and take it back with them. Your gold 
+			also acts as your health so if you run out completely then you lose.
+		 </p>
+		 
+		 <div class="image-container">
+            <img 
+              src="images/vEnemy.png" 
+              alt="Screenshot of the enemy stealing gold" 
+              class="game-thumbnail"
+            />
+          </div>
+
+    </section>
+
+</body>
+
+<footer>
+    <p>Billy Connors Game Development Portfolio</p>
+</footer>
+</html>
